@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/shannoncox/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/shannoncox/Android/TestLibMuseAndroid/app/build/intermediates/pre-dexed/debug/support-v4-19.1.0-ef8011ee9755ef7ec2bb59be549f0699fa522943.jar" />
+    </item>
+    <item
+        jar="/Users/shannoncox/Android/TestLibMuseAndroid/app/libs/libmuseandroid.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29c9db643c9cd140b86ad1788d6b9fdf96983037">
+        <dex dex="/Users/shannoncox/Android/TestLibMuseAndroid/app/build/intermediates/pre-dexed/debug/libmuseandroid-565441a06dc0632258d35768b417930adb174286.jar" />
+    </item>
+    <item
+        jar="/Users/shannoncox/Android/TestLibMuseAndroid/app/build/intermediates/exploded-aar/com.github.eluleci/flatui/3.0.0/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d1089efa4a24767294278997764bea2fda31ccca">
+        <dex dex="/Users/shannoncox/Android/TestLibMuseAndroid/app/build/intermediates/pre-dexed/debug/classes-06179abec6e075561ec1b91be5926c443b33ce99.jar" />
+    </item>
+
+</items>
