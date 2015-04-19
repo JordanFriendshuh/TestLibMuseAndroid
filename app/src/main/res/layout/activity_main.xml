@@ -1,16 +1,29 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:flatui="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <TextView android:id="@+id/song_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/undefined" />
+    </LinearLayout>
 
 
 
     <!-- BUTTONS -->
     <Spinner
-	    android:id="@+id/muses_spinner"
-	    android:layout_width="match_parent"
-	    android:layout_height="60dp" />
+        android:id="@+id/muses_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -23,17 +36,17 @@
             android:layout_height="40dp"
             android:text="@string/refresh"
             android:layout_gravity="top" />
-	    <Button
-	        android:id="@+id/connect"
-	        android:layout_width="100dp"
-	        android:layout_height="40dp"
-	        android:text="@string/connect"
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="@string/connect"
             android:layout_gravity="top" />
-	    <Button
-	        android:id="@+id/disconnect"
-	        android:layout_width="120dp"
-	        android:layout_height="40dp"
-	        android:text="@string/disconnect"
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:text="@string/disconnect"
             android:layout_gravity="top" />
 
     </LinearLayout>
@@ -61,7 +74,21 @@
             android:text="@string/undefined" />
     </LinearLayout>
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <ImageButton android:layout_width="88dp"
+            android:layout_height="91dp"
+            android:id="@+id/spotPause"/>
+        <ImageButton android:layout_width="88dp"
+            android:layout_height="91dp"
+            android:id="@+id/next"/>
+        <TextView android:text="@string/song_info" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Songinfo" />
+    </LinearLayout>
     <!-- START OF OUR DISPLAY TEXT CODE -->
 
     <LinearLayout
@@ -192,8 +219,4 @@
         android:text="@string/pause"
         android:layout_gravity="center_horizontal" />
 
-
-    <!-- PAUSE/RESUME -->
-
-
-</LinearLayout>
+</RelativeLayout>

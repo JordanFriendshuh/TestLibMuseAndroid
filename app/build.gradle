@@ -22,8 +22,25 @@ android {
     }
 }
 
+repositories{
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    // This library handles authentication and authorization
+    compile 'com.spotify.sdk:spotify-auth:1.0.0-beta9@aar'
+
+    // This library handles music playback
+    compile 'com.spotify.sdk:spotify-player:1.0.0-beta9@aar'
+
+    // All other dependencies for your app should also be here:
+    compile 'com.android.support:appcompat-v7:21.0.3'
+   // compile 'com.android.support:support-v4:19.1.0'
     compile files('libs/libmuseandroid.jar')
     compile 'com.github.eluleci:flatui:3.0.0'
 }
